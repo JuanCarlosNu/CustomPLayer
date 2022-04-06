@@ -1,4 +1,3 @@
-const playbackIcons = document.querySelectorAll('.playback-icons use');
 // updatePlayButton updates the playback icon and tooltip
 // depending on the playback state
 function updatePlayButton() {
@@ -35,6 +34,9 @@ playButton.addEventListener('click', togglePlay);
 //nality then hook is up via event listener.
 video.addEventListener('play', updatePlayButton);
 video.addEventListener('pause', updatePlayButton);
+//new subject
+const playbackIcons = document.querySelectorAll('.playback-icons use');
+
 
 
 
