@@ -44,4 +44,13 @@ function updatePlayButton(){
 video.addEventListener('play, updatePlayButton');
 video.addEventListener('pause', updatePlayButton);
 
+//tooltip
+function updatePlayButton(){
+  playbackIcons.forEach(icon => icon.classList.toggle('hidden'));
 
+  if (video.paused){
+    playButton.setAttribute('data-title', 'play (k)')
+  } else {
+    playButton.setAttribute('data-title', 'pause (k)')
+  }
+}
