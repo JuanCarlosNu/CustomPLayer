@@ -36,7 +36,12 @@ video.addEventListener('play', updatePlayButton);
 video.addEventListener('pause', updatePlayButton);
 //new subject
 const playbackIcons = document.querySelectorAll('.playback-icons use');
-
-
+//updatePlayButton updates the playback icon and tooltip
+//depending on the playback state
+function updatePlayButton(){
+  playbackIcons.forEach(icon => icon.classList.toggle('hidden'));
+}
+video.addEventListener('play, updatePlayButton');
+video.addEventListener('pause', updatePlayButton);
 
 
